@@ -47,7 +47,8 @@ app.get("/search", function (request, response) {
             return {
               url: val.contentUrl,
               snippet: val.name,
-              thumbnail: val.thumbnailUrl
+              thumbnail: val.thumbnailUrl,
+              context: val.hostPageUrl
             };
           });
         
